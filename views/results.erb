@@ -1,3 +1,10 @@
+<%word_count = @analyzed_text.count_of_words%>
+<%vowel_count = @analyzed_text.count_of_vowels%>
+<%constants_count = @analyzed_text.count_of_consonants%>
+<%common_letter = @analyzed_text.most_used_letter.keys[0].capitalize%>
+<%common_letter_count = @analyzed_text.most_used_letter.values[0]%>
+
+
 <h1>Your Text Analysis</h1>
 
 <h2>Number of Words: <%=word_count%></h2>
